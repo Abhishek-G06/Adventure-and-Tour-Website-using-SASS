@@ -28,7 +28,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 section {
-  padding: 5rem 7%;
+  padding: 5rem 9%;
 }
 
 .btn {
@@ -207,12 +207,12 @@ footer {
 
 .category .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
   gap: 1.5rem;
 }
 .category .box-container .box {
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
 }
 .category .box-container .box img {
   height: 20rem;
@@ -602,6 +602,19 @@ footer .credits span {
   .section {
     padding: 3rem 2rem;
   }
+  .category .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 1.5rem;
+  }
+  footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 1.5rem;
+  }
+  footer .box-container .box h3 {
+    color: #219150;
+  }
 }
 @media screen and (max-width: 980px) {
   .html {
@@ -626,6 +639,14 @@ footer .credits span {
   }
   .home .box .content h3 {
     font-size: 4rem;
+  }
+  footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+  }
+  footer .box-container .box h3 {
+    color: #219150;
   }
 }
 @media screen and (max-width: 767px) {

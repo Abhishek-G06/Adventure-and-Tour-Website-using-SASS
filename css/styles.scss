@@ -43,7 +43,7 @@ html {
 }
 
 section {
-  padding: 5rem 7%;
+  padding: 5rem 9%;
 }
 
 .btn {
@@ -247,11 +247,11 @@ footer{
 
 .category {
   .box-container {
-    @include grid(29rem);
+    @include grid(28rem);
 
     .box {
       text-align: center;
-      padding: 2rem;
+      padding: 1rem;
 
       img {
         height: 20rem;
@@ -669,7 +669,7 @@ footer{
 
   .box-container{
     @include grid(25rem);
-
+    
     .box{
       h3{
         font-size: 2rem;
@@ -725,6 +725,24 @@ footer{
   .section {
     padding: 3rem 2rem;
   }
+
+  .category {
+    .box-container {
+      @include grid(20rem);
+    }
+  }    
+  
+  footer {  
+    .box-container {
+      @include grid(22rem);
+      
+      .box {
+        h3{
+          color: $green;
+        }
+      }
+    }
+  }    
 }
 
 @media screen and (max-width: 980px) {
@@ -756,6 +774,18 @@ footer{
       }
     }
   }
+
+  footer {
+    .box-container {
+      @include grid(25rem);
+      
+      .box{
+        h3{
+          color: $green;
+        }
+      }
+    }
+  }  
 }
 
 @media screen and (max-width: 767px) {
