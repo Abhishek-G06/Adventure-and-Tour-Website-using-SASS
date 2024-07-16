@@ -53,6 +53,10 @@ section {
   color: #10221b;
 }
 
+footer {
+  padding: 5rem 9%;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -545,6 +549,50 @@ section {
 }
 .clients .slide img {
   height: 12rem;
+}
+
+footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/img/footer-bg.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+footer .box-container .box h3 {
+  font-size: 2rem;
+  padding: 1.5rem 0;
+  color: #fff;
+}
+footer .box-container .box a {
+  display: block;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+footer .box-container .box a i {
+  color: #219150;
+  padding-right: 0.5rem;
+}
+footer .box-container .box a:hover {
+  color: #219150;
+}
+footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+footer .credits {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+footer .credits span {
+  color: #219150;
 }
 
 @media screen and (max-width: 1220px) {

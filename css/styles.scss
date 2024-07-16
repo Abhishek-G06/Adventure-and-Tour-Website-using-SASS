@@ -69,6 +69,10 @@ section {
   color: $black;
 }
 
+footer{
+  padding: 5rem 9%;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -657,20 +661,61 @@ section {
   }
 }
 
+footer{
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/img/footer-bg.webp) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  .box-container{
+    @include grid(25rem);
+
+    .box{
+      h3{
+        font-size: 2rem;
+        padding: 1.5rem 0;
+        color: $white;
+      }
+
+      a{
+        display: block;
+        font-size: 1.4rem;
+        color: $white;
+        padding: 1rem 0;
+
+        i{
+          color: $green;
+          padding-right: 0.5rem;
+        }
+
+        &:hover{
+          color: $green;
+
+          i{
+            padding-right: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .credits{
+    text-align: center;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: $white;
+
+    span{
+      color: $green;
+    }
+  }
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
+// media queries
 
 @media screen and (max-width: 1220px) {
   .header {
