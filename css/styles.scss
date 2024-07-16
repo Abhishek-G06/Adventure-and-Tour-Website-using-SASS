@@ -22,7 +22,7 @@ $box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 @mixin grid($val) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
-  gap: 1.2rem;
+  gap: 1.5rem;
 }
 
 html {
@@ -43,7 +43,7 @@ html {
 }
 
 section {
-  padding: 5rem 8%;
+  padding: 5rem 7%;
 }
 
 .btn {
@@ -62,7 +62,7 @@ section {
   }
 }
 
-.heading{
+.heading {
   text-align: center;
   margin-bottom: 2.5rem;
   font-size: 4rem;
@@ -79,7 +79,7 @@ section {
   display: flex;
   align-items: center;
 
-  &.active{
+  &.active {
     background: $white;
     box-shadow: $box-shadow;
   }
@@ -241,28 +241,27 @@ section {
   color: $black;
 }
 
-.category{
-
-  .box-container{
+.category {
+  .box-container {
     @include grid(29rem);
 
-    .box{
+    .box {
       text-align: center;
       padding: 2rem;
 
-      img{
+      img {
         height: 20rem;
         width: 20rem;
         border-radius: 50%;
         margin-bottom: 1.5rem;
       }
 
-      h3{
+      h3 {
         font-size: 2rem;
         color: $green;
       }
 
-      p{
+      p {
         font-size: 1.5rem;
         color: $black;
         padding: 1rem 0;
@@ -272,34 +271,33 @@ section {
   }
 }
 
-.about{
+.about {
   background: $light-bg;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
 
-  .image{
+  .image {
     flex: 1 1 42rem;
     padding-right: 5rem;
     padding-bottom: 5rem;
 
-
-    img{
+    img {
       width: 100%;
-      box-shadow: 4rem 4rem 0 rgba(0,0,0,0.1);
+      box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
     }
   }
 
-  .content{
+  .content {
     flex: 1 1 42rem;
 
-    h3{
+    h3 {
       font-size: 3rem;
       color: $green;
     }
 
-    p{
+    p {
       font-size: 1.5rem;
       color: $black;
       padding: 1rem 0;
@@ -308,37 +306,36 @@ section {
   }
 }
 
-.shop{
-
-  .slide{
+.shop {
+  .slide {
     border: $border;
 
-    &:hover .image .icons{
+    &:hover .image .icons {
       transform: translateY(0);
     }
 
-    .image{
+    .image {
       position: relative;
       overflow: hidden;
       height: 30rem;
       width: 100%;
 
-      img{
+      img {
         height: 100%;
         width: 100%;
         object-fit: cover;
       }
 
-      .icons{
+      .icons {
         width: 100%;
         position: absolute;
-        bottom: 2rem; 
-        left:0;
+        bottom: 2rem;
+        left: 0;
         text-align: center;
         z-index: 10;
         transform: translateY(7rem);
 
-        a{
+        a {
           height: 4.5rem;
           width: 4.5rem;
           line-height: 4.5rem;
@@ -347,30 +344,30 @@ section {
           color: $white;
           margin: 0 0.2rem;
 
-          &:hover{
+          &:hover {
             background: $green;
           }
         }
       }
     }
 
-    .content{
+    .content {
       padding: 1rem 0;
       text-align: center;
 
-      h3{
+      h3 {
         font-size: 2rem;
         color: $black;
       }
-      
-      .price{
+
+      .price {
         padding: 1rem 0;
         padding-top: 0.5rem;
         font-size: 2rem;
         color: $green;
       }
 
-      .stars i{
+      .stars i {
         font-size: 1.7rem;
         color: $black;
       }
@@ -378,16 +375,73 @@ section {
   }
 }
 
+.packages {
+  background: $light-bg;
 
+  .box-container {
+    @include grid(32rem);
 
+    .box {
+      text-align: center;
+      background: $white;
+      border: $border;
+      box-shadow: $box-shadow;
+      border-radius: 0.5rem;
 
+      &:hover{
+        background: $black;
 
+        .content > *{
+          color: $white;
+        }
 
+        .btn{
+          border-color: $white;
 
+          &:hover{
+            background: $white;
+            color: $black;
+          }
+        }
+      }
 
+      .image {
+        height: 25rem;
+        overflow: hidden;
+        padding: 2rem;
+        padding-bottom: 0;
+        border-radius: 0.5rem;
 
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
 
+      .content {
+        padding: 2rem;
 
+        h3 {
+          font-size: 2rem;
+          color: $black;
+        }
+
+        p{
+          font-size: 1.5rem;
+          color: $black;
+          padding: 1rem 0;
+          line-height: 2;
+        }
+
+        .price{
+          font-size: 2.2rem;
+          color: $green;
+        }
+      }
+    }
+  }
+}
 
 
 
@@ -492,7 +546,7 @@ section {
     font-size: 50%;
   }
 
-  .heading{
+  .heading {
     font-size: 3rem;
   }
 }
