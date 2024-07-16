@@ -28,7 +28,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 section {
-  padding: 5rem 9%;
+  padding: 5rem 8%;
 }
 
 .btn {
@@ -204,11 +204,11 @@ section {
 .category .box-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 .category .box-container .box {
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
 }
 .category .box-container .box img {
   height: 20rem;
@@ -255,6 +255,63 @@ section {
   color: #10221b;
   padding: 1rem 0;
   line-height: 2;
+}
+
+.shop .slide {
+  border: 0.2rem solid #10221b;
+}
+.shop .slide:hover .image .icons {
+  transform: translateY(0);
+}
+.shop .slide .image {
+  position: relative;
+  overflow: hidden;
+  height: 30rem;
+  width: 100%;
+}
+.shop .slide .image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.shop .slide .image .icons {
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  text-align: center;
+  z-index: 10;
+  transform: translateY(7rem);
+}
+.shop .slide .image .icons a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  background: #10221b;
+  color: #fff;
+  margin: 0 0.2rem;
+}
+.shop .slide .image .icons a:hover {
+  background: #219150;
+}
+.shop .slide .content {
+  padding: 1rem 0;
+  text-align: center;
+}
+.shop .slide .content h3 {
+  font-size: 2rem;
+  color: #10221b;
+}
+.shop .slide .content .price {
+  padding: 1rem 0;
+  padding-top: 0.5rem;
+  font-size: 2rem;
+  color: #219150;
+}
+.shop .slide .content .stars i {
+  font-size: 1.7rem;
+  color: #10221b;
 }
 
 @media screen and (max-width: 1220px) {

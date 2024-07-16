@@ -22,7 +22,7 @@ $box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 @mixin grid($val) {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
-  gap: 1.5rem;
+  gap: 1.2rem;
 }
 
 html {
@@ -43,7 +43,7 @@ html {
 }
 
 section {
-  padding: 5rem 9%;
+  padding: 5rem 8%;
 }
 
 .btn {
@@ -248,7 +248,7 @@ section {
 
     .box{
       text-align: center;
-      padding: 1rem;
+      padding: 2rem;
 
       img{
         height: 20rem;
@@ -308,7 +308,75 @@ section {
   }
 }
 
+.shop{
 
+  .slide{
+    border: $border;
+
+    &:hover .image .icons{
+      transform: translateY(0);
+    }
+
+    .image{
+      position: relative;
+      overflow: hidden;
+      height: 30rem;
+      width: 100%;
+
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+
+      .icons{
+        width: 100%;
+        position: absolute;
+        bottom: 2rem; 
+        left:0;
+        text-align: center;
+        z-index: 10;
+        transform: translateY(7rem);
+
+        a{
+          height: 4.5rem;
+          width: 4.5rem;
+          line-height: 4.5rem;
+          font-size: 1.7rem;
+          background: $black;
+          color: $white;
+          margin: 0 0.2rem;
+
+          &:hover{
+            background: $green;
+          }
+        }
+      }
+    }
+
+    .content{
+      padding: 1rem 0;
+      text-align: center;
+
+      h3{
+        font-size: 2rem;
+        color: $black;
+      }
+      
+      .price{
+        padding: 1rem 0;
+        padding-top: 0.5rem;
+        font-size: 2rem;
+        color: $green;
+      }
+
+      .stars i{
+        font-size: 1.7rem;
+        color: $black;
+      }
+    }
+  }
+}
 
 
 
