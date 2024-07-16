@@ -540,6 +540,13 @@ section {
   color: #10221b;
 }
 
+.clients .slide {
+  text-align: center;
+}
+.clients .slide img {
+  height: 12rem;
+}
+
 @media screen and (max-width: 1220px) {
   .header {
     padding: 2rem;
